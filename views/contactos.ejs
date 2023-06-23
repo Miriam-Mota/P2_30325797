@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/stylecontac.css">
+    <title>Contactos</title>
+</head>
+<body>
+    <h1 class="h1">Lista de Contactos</h1>
+    <br>
+    <% for(const c of contactos) { %>
+      
+       <div class="cuadro">
+        <p>Nombre: <%= c.usuario %></p>
+        <p>Correo: <%= c.correo %></p>
+        <p>Mensaje: <%= c.mensaje %></p>
+        <p>Date: <%= c.date %></p>
+        <p>IP: <%= c.ip %></p>
+        <p>Country: <%= c.country %></p>
+       </div>
+      
+    <% } %>
+    
+    
+</body>
+</html>
